@@ -99,12 +99,12 @@ def main():
         tokens = processor.extract_tokens(user_input)
         
         rpn = processor.convert_to_rpn(tokens)
-        print(f"\n[1] Зворотний польський запис: {' '.join(rpn)}")
+        print(f"\n Зворотний польський запис: {' '.join(rpn)}")
 
         result = processor.calculate(rpn)
         
         formatted_res = f"{result:g}" 
-        print(f"[2] Результат обчислення: {formatted_res}")
+        print(f" Результат обчислення: {formatted_res}")
 
     except Exception as error:
         print(f"Виникла помилка: {error}")
